@@ -4,26 +4,27 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class MovingSpriteEx extends JFrame{
+public class ShootingMissilesEx extends JFrame{
 	
-	public MovingSpriteEx() {
+	
+	public ShootingMissilesEx() {
 		initUI();
 	}
 	
 	private void initUI() {
 		add(new Board());
 		
-		setTitle("space invader");
 		setSize(400, 300);
-		
-		setLocationRelativeTo(null);
 		setResizable(false);
+		
+		setTitle("Shooting Missiles");
+		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() ->{
-			MovingSpriteEx ex = new MovingSpriteEx();
+			ShootingMissilesEx ex = new ShootingMissilesEx();
 			ex.setVisible(true);
 		});
 	}
