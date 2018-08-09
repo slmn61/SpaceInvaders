@@ -4,29 +4,28 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class ShootingMissilesEx extends JFrame{
+public class CollisionEx extends JFrame {
 	
-	
-	public ShootingMissilesEx() {
+	public CollisionEx() {
 		initUI();
 	}
 	
 	private void initUI() {
 		add(new Board());
 		
-		setSize(400, 300);
 		setResizable(false);
+		pack();
 		
-		setTitle("Shooting Missiles");
+		setTitle("Collision");
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
-			ShootingMissilesEx ex = new ShootingMissilesEx();
+		
+		EventQueue.invokeLater(() -> {
+			CollisionEx ex = new CollisionEx();
 			ex.setVisible(true);
 		});
 	}
-
 }
